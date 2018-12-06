@@ -4,8 +4,8 @@ import collections
 import pprint
 
 
-# combine all csv files
 file_names = ["./data/cifco.csv", "./data/hexun.csv", "./data/qhrb.csv", "./data/shmet.csv", "./data/zdqh.csv"]
+# combine all csv files
 combined_csv = pd.concat( [ pd.read_csv(f) for f in file_names ] )
 # export the combines csv files
 combined_csv.to_csv( "./data/combined_csv.csv", index=False )
@@ -15,7 +15,7 @@ with open('./data/combined_csv.csv', "rt") as fp:
     root = csv.reader(fp, delimiter=',')
     result = collections.defaultdict(list)
     for row in root:
-        year = row[2].split("-")[0]
+        year = row[1].split("-")[0]
         result[year].append(row)
 
 # print("Result:-")       
