@@ -1,3 +1,7 @@
+"""
+
+"""
+
 # Python 3 is UTF-8 by default
 import jieba
 import string
