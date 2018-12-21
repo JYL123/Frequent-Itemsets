@@ -67,7 +67,7 @@ def write_dict_to_csv(bag_of_words, file_name):
 
 
 # get all the titles in the specified excel file
-titles = read_file("./data/cifco.xlsx")
+titles = read_file("./data/test_daily_data.xlsx")
 
 # creating a hashmap
 bag_of_words = dict()
@@ -84,7 +84,7 @@ for index, row in titles.iterrows():
 
 # reverse = true: descending order
 bag_of_words = dict(sorted(bag_of_words.items(), key=lambda x: x[1], reverse=True))
-write_dict_to_csv(bag_of_words, "./data/cifco_out.csv")
+write_dict_to_csv(bag_of_words, "./data/test_daily_data_out.csv")
 # print the top 20 items
 bag_of_words = take(20, bag_of_words.items())
 # test
