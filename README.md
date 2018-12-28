@@ -19,7 +19,9 @@ THere is more value to an association rule if it reflects a true relationship, w
 
 Frequent itemsets can be defined as sets of items that has association rules with high support and confidence.
 
+### Question
 
+The problem encountered in this algorithm is how to sort pairs of Chinese characters.
 
 
 
