@@ -3,6 +3,8 @@
 ### Text segamention
 `Text segamentation` is dividing sentences into its meaningful components. It is a subject of `natural language processing`. In some languages, such as English, `white space` is a good delimiter to divide text into its individual parts, even though it has its limitations in the case of `collocations` and `compounds`. However, in many other languages, such as Chinese and Japanese, there is no white space between the words, except when there is a presence of punctuation. For more information, you can refer to [this link.](https://en.wikipedia.org/wiki/Text_segmentation) In this project, we will make use of [jieba](https://github.com/fxsjy/jieba) this segamentation module to segment Chinese text. 
 
+[Refer to this code.](https://github.com/JYL123/Frequent-Itemsets/blob/master/single_file_processing.py)
+
 ### Frequent itemsets
 Frequent itemsets are sets of items associated with each other. This problem of discovering frequent itemsets can be viewed as a subfield of discovering of association rules, which is often more complex. 
 
@@ -18,6 +20,8 @@ THere is more value to an association rule if it reflects a true relationship, w
 `j`.
 
 Frequent itemsets can be defined as sets of items that has association rules with high support and confidence.
+
+[Refer to this code.](https://github.com/JYL123/Frequent-Itemsets/blob/master/apriori.py)
 
 ### Question
 
