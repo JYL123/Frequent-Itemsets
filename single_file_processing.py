@@ -95,6 +95,3 @@ bag_of_words = take(20, bag_of_words.items())
 print(bag_of_words)
 # plot the graph
 plot_graph_with_chinese_characters(bag_of_words, "phrases", "frequencies", "Frequency Graph")
-
-# some random change for testing
-# some other change
