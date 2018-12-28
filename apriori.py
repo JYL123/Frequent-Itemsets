@@ -21,12 +21,5 @@ for key, value in words_freq_dict.items():
         if value > 0.006 and not key.isdigit():
          frequent_items_table[key]= value
 
-# generate all unique pairs 
-pairs = namedtuple('pairs', ['key1', 'key2'])
-all_pairs = dict()
-frequent_items = list(frequent_items_table.keys())
-for idx1, val1 in enumerate(frequent_items):
-    for idx2, val2 in enumerate(frequent_items):
-        if val1 < val2:
-                all_pairs[pairs(idx1, idx2)] = 0
+# generate all unique pairs encounters a problem of chinese character comparison
 
