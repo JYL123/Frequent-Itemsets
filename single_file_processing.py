@@ -1,5 +1,6 @@
 """
-
+This code processes a csv file that is in the format specified in the csv files in data folder. 
+This code displays a graph of top 20 items in the csv file 
 """
 
 # Python 3 is UTF-8 by default
@@ -91,7 +92,5 @@ bag_of_words = dict(sorted(bag_of_words.items(), key=lambda x: x[1], reverse=Tru
 write_dict_to_csv(bag_of_words, "./data/test_daily_data_out.csv")
 # print the top 20 items
 bag_of_words = take(20, bag_of_words.items())
-# test
-print(bag_of_words)
 # plot the graph
 plot_graph_with_chinese_characters(bag_of_words, "phrases", "frequencies", "Frequency Graph")

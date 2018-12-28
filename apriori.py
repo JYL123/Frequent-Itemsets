@@ -1,3 +1,8 @@
+"""
+This code processes a csv file that is in the format specified in the csv files in data folder. 
+This code returns a list of freuqent items with frequency at least 3 times in the given csv files
+"""
+
 import csv
 from collections import defaultdict, namedtuple
 
@@ -20,6 +25,7 @@ for key, value in words_freq_dict.items():
         # remove non-frequent items and meaningless numbers 
         if value > 0.006 and not key.isdigit():
          frequent_items_table[key]= value
+print(frequent_items_table)
 
 # generate all unique pairs encounters a problem of chinese character comparison
 
