@@ -27,5 +27,5 @@ for key, value in words_freq_dict.items():
          frequent_items_table[key]= value
 print(frequent_items_table)
 
-# generate all unique pairs encounters a problem of chinese character comparison
+# generate all unique pairs encounters a problem of chinese character sorting
 
